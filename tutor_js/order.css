@@ -17,7 +17,7 @@ body {
     border-radius: 25px;
 }
 
-.block {
+/* .block {
     background: #fff;
     height: 200px;
     width: 200px;
@@ -41,6 +41,36 @@ body {
         border-radius: 50%;
         background: #3691bb;
     
+    }
+    100% {
+        left: calc(100% - 200px);
+    }
+} */
+
+
+.block {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+}
+
+.block {
+    animation: move-block 1.5s infinite alternate;
+}
+
+.block:hover {
+    border-radius: 25px;
+    background-color: aqua;
+}
+
+@keyframes move-block {
+    0%{
+        left: 0;
+    }
+    50% {
+        border-radius: 50%;
+        background: #3691bb;
     }
     100% {
         left: calc(100% - 200px);
