@@ -1,0 +1,48 @@
+body {
+    background: #333;
+}
+
+.wrapper {
+    padding: 50px;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 200px;
+    background: #444;
+}
+
+.container:hover {
+    border-radius: 25px;
+}
+
+.block {
+    background: #fff;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+
+.block:hover {
+    background: #3691bb;
+    border-radius: 25px;
+}
+
+.block {
+    animation: move-block 2s infinite alternate;
+}
+
+@keyframes move-block {
+    0% {
+        left: 0;
+    }
+    50% {
+        border-radius: 50%;
+        background: #3691bb;
+    
+    }
+    100% {
+        left: calc(100% - 200px);
+    }
+}
