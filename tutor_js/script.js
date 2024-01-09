@@ -1,3 +1,5 @@
+// add, remove, append, prepend, insertAdjacentHTML, innerHTML, before, after, beforebegin(end), afterbegin(end), createElement, cssText, setAttribute, getAttribute, hasAttribute, classList...
+
 // const div = document.querySelector('.element');
 
 // div.append('Hello');
