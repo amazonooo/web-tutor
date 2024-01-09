@@ -2,7 +2,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.active {
-    color: red;
+html {
+    height: 1500px;
 }
 
+input {
+    background: #333;
+    color: white;
+    margin-left: 18px;
+}

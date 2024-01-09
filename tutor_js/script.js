@@ -130,13 +130,93 @@
 
 // document.body.append(button);
 
-const button = document.createElement('button');
-button.textContent = 'BUTTON';
-button.style.cssText = `
-    border-radius: 12px;
-    background: transparent;
-    padding: 8px 12px;
-    border: 1px solid aqua;
-`;
+// const button = document.createElement('button');
+// button.textContent = 'BUTTON';
+// button.style.cssText = `
+//     border-radius: 12px;
+//     background: transparent;
+//     padding: 8px 12px;
+//     border: 1px solid aqua;
+// `;
 
-document.body.append(button);
+// document.body.append(button);
+
+
+
+
+
+// click, input, scroll, keydown, resize, mouseenter, mouseleave
+// addEventListener, removeEventListener
+
+
+const button = document.querySelector('button');
+
+// button.addEventListener('click', clickHandler)
+
+// let i = 0;
+
+// function clickHandler() {
+//     i++;
+//     console.log('click', i);  
+
+//     switch (i) {
+//         case 1:
+//             button.style.background = 'red';
+//             break;
+//         case 2:
+//             button.style.background = 'yellow';
+//             break;
+//         case 3:
+//             button.style.background = 'aqua';
+//             break;
+//         case 4:sssssssssssssss
+//             button.style.background = 'pink';
+//             break;
+//         case 5:
+//             button.style.background = 'purple';
+//             button.removeEventListener('click', clickHandler);
+//             break;
+//     }
+// }
+
+
+// const input = document.querySelector('[name="my_input"]');
+
+// input.addEventListener('input', functionName);
+
+// let prevValue = input.value;
+
+// function functionName(event) {
+//     const userData = event.target.value;
+
+//     if (userData.includes('(') || userData.includes('-')) {
+//         input.value = prevValue;
+//         return;
+//     }
+
+//     input.value = userData;
+//     prevValue = userData;
+// }
+
+
+
+// document.addEventListener('scroll', (event) => {
+//     console.log(event.target.scrollingElement.scrollTop);
+// });
+
+// document.addEventListener('keydown', (event) => {
+//     console.log(event);
+// })
+
+// window.addEventListener('resize', (event) => {
+//     console.log(event);
+// });
+
+button.addEventListener('mouseenter', (event) => {
+    console.log('ENTER');
+});
+
+
+button.addEventListener('mouseleave', (event) => {
+    console.log('LEAVE');
+});
