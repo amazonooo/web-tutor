@@ -149,7 +149,7 @@
 // addEventListener, removeEventListener
 
 
-const button = document.querySelector('button');
+// const button = document.querySelector('button');
 
 // button.addEventListener('click', clickHandler)
 
@@ -212,11 +212,53 @@ const button = document.querySelector('button');
 //     console.log(event);
 // });
 
-button.addEventListener('mouseenter', (event) => {
-    console.log('ENTER');
-});
+// button.addEventListener('mouseenter', (event) => {
+//     console.log('ENTER');
+// });
 
 
-button.addEventListener('mouseleave', (event) => {
-    console.log('LEAVE');
-});
+// button.addEventListener('mouseleave', (event) => {
+//     console.log('LEAVE');
+// });
+
+
+
+
+// ВЕРСТКА
+
+
+
+
+// const goods = document.querySelector('button[data-id="goods"]');
+// const cart = document.querySelector('button[data-id="cart"]');
+
+// // console.log(goods, cart);
+
+// function clickHandler(event) {
+//     goods.classList.toggle('active');
+//     cart.classList.toggle('active');
+// }
+
+
+// goods.addEventListener('click', clickHandler);
+// cart.addEventListener('click', clickHandler);
+
+
+
+
+const tabs = document.querySelectorAll('button[data-id="tab"]');
+
+for (let i = 0; i < tabs.length; i++) {
+    const tab = tabs[i];
+    console.log(tab);
+
+    tab.addEventListener('click', clickHandler);
+}
+
+function clickHandler(event) {
+    console.log(event);
+    for (let i = 0; i < tabs.length; i++) {
+        const tab = tabs[i];
+        tab.classList.toggle('active');
+    }
+}
