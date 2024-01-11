@@ -1,0 +1,96 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 30px;
+}
+
+.block {
+    margin-bottom: 30px;
+}
+
+.block p:last-child {
+    text-transform: uppercase;
+    color: aqua;
+}
+
+.block p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.block:hover {}
+
+.link {
+    color: aqua;
+}
+
+.link:visited {
+    color: plum;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.link:active {
+    color: red;
+}
+
+.textinput {
+    border: 1px solid #666;
+    height: 50px;
+    padding: 6px 15px;
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.textinput:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.textbutton {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #666;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.textbutton:hover {
+    background-color: #444;
+}
+
+.textbutton:active {
+    background: #cc2929;
+}
+
+.list {
+    
+}
+
+.list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.list li:first-child {
+    color: chartreuse;
+}
+
+.list li:last-child {
+    color: red;
+}
+
+.list li:nth-child(4) {
+    color: blueviolet;
+}
