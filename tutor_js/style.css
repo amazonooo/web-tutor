@@ -3,98 +3,86 @@
 }
 
 body {
-    padding: 30px;
+    height: 100vh;
+    background-image: url(./images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.block {
-    margin-bottom: 30px;
+nav {
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.block p:last-child {
-    text-transform: uppercase;
-    color: aqua;
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.block p {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 20px;
-}
-
-.block:hover {}
-
-.link {
-    color: aqua;
-}
-
-.link:visited {
-    color: plum;
-}
-
-.link:hover {
-    text-decoration: underline;
-    color: blue;
-}
-
-.link:active {
-    color: red;
-}
-
-.textinput {
-    border: 1px solid #666;
+nav li {
     height: 50px;
-    padding: 6px 15px;
-    font-size: 18px;
-    width: 300px;
-    margin-bottom: 10px;
-    border-radius: 7px;
 }
 
-.textinput:focus {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
 }
 
-.textbutton {
-    display: block;
-    width: 300px;
-    height: 50px;
-    background-color: #666;
-    font-size: 18px;
-    color: #fff;
-    border-radius: 7px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+nav a:hover {
+    background-color: #f0f0f0;
 }
 
-.textbutton:hover {
-    background-color: #444;
+nav li:first-child {
+    margin-right: auto;
 }
 
-.textbutton:active {
-    background: #cc2929;
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #ffffff2a;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.list {
-    
+.sidebar li {
+    width: 100%;
 }
 
-.list li {
-    font-size: 18px;
-    margin-bottom: 15px;
+.sidebar a {
+    width: 100%;
 }
 
-.list li:first-child {
-    color: chartreuse;
+.menu-button {
+    display: none;
 }
 
-.list li a:hover {
-    transform: scale(20px);
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
 }
 
-.list li:last-child {
-    color: red;
-}
-
-.list li:nth-child(4) {
-    color: blueviolet;
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
 }
