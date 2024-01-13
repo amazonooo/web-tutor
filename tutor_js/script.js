@@ -244,21 +244,93 @@
 // cart.addEventListener('click', clickHandler);
 
 
+let activeTabId = 'goods';
 
+const initialTab = getActiveTab();
+initialTab.classList.add('active')
 
-const tabs = document.querySelectorAll('button[data-id="tab"]');
+const tabsContainer = document.querySelector('.tabs');
+const tabs = document.querySelectorAll('button.tab');
 
 for (let i = 0; i < tabs.length; i++) {
     const tab = tabs[i];
-    console.log(tab);
 
     tab.addEventListener('click', clickHandler);
 }
 
 function clickHandler(event) {
-    console.log(event);
-    for (let i = 0; i < tabs.length; i++) {
-        const tab = tabs[i];
-        tab.classList.toggle('active');
+    const activeTab = getActiveTab();
+    activeTab.classList.remove('active');
+    event.target.classList.add('active');
+
+    activeTabId = event.target.dataset.tabId;
+
+    if (activeTabId === 'goods') {
+        tabsContainer.insertAdjacentElement('afterend', renderGoods());
     }
+    else {
+        tabsContainer.insertAdjacentElement('afterend', renderCart());
+    }
+}
+
+function getActiveTab() {
+    return document.querySelector(`button[data-tab-id="${activeTabId}"]`);
+}
+
+function renderGoods() {
+    return `
+        <div class="product-items">
+            <div class="product-item">
+            <img src="/tutor_js/images/html.png" alt="">
+                <div class="product-list">
+                    <h3>Уроки по HTML</h3>
+                    <p class="price">₽ 300</p>
+                    <button class="button">В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="/tutor_js/images/css.png" alt="">
+                <div class="product-list">
+                    <h3>Уроки по CSS</h3>
+                    <p class="price">₽ 150</p>
+                    <button class="button">В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="/tutor_js/images/js.png" alt="">
+                <div class="product-list">
+                    <h3>Уроки по JS</h3>
+                    <p class="price">₽ 260</p>
+                    <button class="button">В корзину</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+
+function renderCart() {
+    return `
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="cart-item-title">Уроки по HTML</div>
+                <div class="cart-item-count">3шт.</div>
+                <div class="cart-item-price">₽ 150</div>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-title">Уроки по CSS</div>
+                <div class="cart-item-count">1шт.</div>
+                <div class="cart-item-price">₽ 450</div>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-title">Уроки по JS</div>
+                <div class="cart-item-count">6шт.</div>
+                <div class="cart-item-price">₽ 550</div>
+            </div>
+        </div>
+    `;
 }
