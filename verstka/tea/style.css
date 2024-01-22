@@ -4,7 +4,12 @@ body {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
+    position: relative;
     /* font-family: 'Cormorant', sans-serif; */
+}
+
+button {
+    background-color: transparent;
 }
 
 /* -----------HEADER----------- */
@@ -52,10 +57,29 @@ body {
     justify-content: space-between;
 }
 
+.mobile-nav,
+.menu__close-btn {
+    display: none;
+}
+
 .menu__btn span {
     background-color: #000;
     height: 2px;
     width: 100%;
+}
+
+.menu--close {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.menu--close.menu--open {
+    display: block;
 }
 
 .menu__item {
@@ -165,20 +189,61 @@ body {
 
 @media (max-width: 860px) {
     .menu__list {
+        transform: translateY(-100%);
         /* display: none; */
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        width: 360px;
+        width: 480px;
         margin: 0 auto;
         background-color: #fff;
         display: block;
         text-align: center;
         padding-top: 60px;
+        transition: transform .6s ease;
+    }
+    .menu__list.menu__list--open {
+        transform: translateY(0%);
+    }
+    .menu__close-btn {
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
     .menu__btn {
         display: flex;
+    }
+    .mobile-nav,
+    .menu__close-btn {
+        display: block;
+    }
+    .menu__item {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-family: 'Cormorant', sans-serif;
+    }
+    .mobile-menu {
+        padding-top: 60px;
+        margin: 60px 30px;
+        border-top: 2px solid #F7F2EA;
+    }
+    .mobile-menu__item {
+        margin-bottom: 35px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    .mobile-actions {
+       background-color: #F7F2EA; 
+        height: 60px;
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-actions__item {
+
     }
     .menu {
         order: -1;
@@ -227,6 +292,9 @@ body {
     }
     .logo img {
         width: 40px;
+    }
+    .menu__list {
+        width: 360px;
     }
 }
 
