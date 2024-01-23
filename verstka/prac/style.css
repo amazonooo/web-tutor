@@ -1,0 +1,103 @@
+* {
+    font-family: 'Arimo', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 88px;
+    padding: 30px 0;
+}
+
+.header {
+    background: #D9D9D9;
+}
+.logo {
+    font-size: 28px;
+}
+.menu {
+}
+.header__list {
+    display: flex;
+    gap: 22px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__item:nth-child(4) {
+    padding-right: 68px;
+}
+
+.header__link {
+}
+
+.images {
+    min-height: 507px;
+    background: #EDEDED;
+}
+.title{
+    text-align: center;
+    padding-bottom: 230px;
+    padding-top: 230px;
+    font-size: 38px;
+    font-weight: 400;
+    position: relative;
+}
+
+.arrow__right {
+    position: absolute;
+    right: 0;
+    top: 230px;
+}
+
+.arrow__left {
+    position: absolute;
+    left: 0;
+    top: 230px;
+}
+
+/* .title::before {
+    content: url('../prac/Polygon лево.svg'); 
+    position: absolute;
+    left: 0;
+}
+
+.title::after {
+    content: url(../prac/Polygon\ право.svg);
+    position: absolute;
+    right: 0;
+    top: 230px;
+} */
+
+.number {
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+.about {
+    margin-top: 60px;
+}
+
+.about__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.about__image {
+}
+.about__text {
+}
+.text__one {
+}
+.text__two {
+}
+.text__three {
+}
