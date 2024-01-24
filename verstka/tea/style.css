@@ -24,6 +24,14 @@ button {
     padding: 0 20px;
 }
 
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Cormorant', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 .header__inner {
     display: flex;
     align-items: center;
@@ -173,19 +181,18 @@ button {
     margin-bottom: 150px;
 }
 
-.assortment__title {
+/* .assortment__title {
     text-align: center;
     margin-bottom: 60px;
     font-weight: 400;
     font-family: 'Cormorant', sans-serif;
     font-size: 40px;
-}
+} */
 
 .assortment__list {
     display: flex;
     text-align: center;
     gap: 0 40px;
-    flex-wrap: wrap;
 }
 
 .assortment__item {
@@ -194,7 +201,9 @@ button {
 }
 
 .assortment__img {
-
+    max-width: 208px;
+    max-height: 208px;
+    width: 100%;
 }
 
 .assortment__name {
@@ -210,6 +219,9 @@ button {
 /* ------ADAPTIVE------ */
 
 @media (max-width: 1000px) {
+    .title {
+        margin-bottom: 30px;
+    }
     .user-actions__item--search {
         margin-left: 30px;
     }
@@ -228,6 +240,12 @@ button {
     .blockquote__text {
         margin-top: 120px;
         margin-bottom: 135px;
+    }
+    .assortment__list {
+        gap: 0;
+    }
+    .assortment {
+        margin-bottom: 120px;
     }
 }
 
@@ -299,12 +317,20 @@ button {
 }
 
 @media (max-width: 768px) {
+    .title {
+        margin-bottom: 30px;
+    }
     .header__inner {
         padding-left: 64px;
         padding-right: 64px;
     }
     .blockquote__text {
         max-width: 640px;
+    }
+    .assortment__list {
+        gap: 47px 6px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -339,9 +365,15 @@ button {
     .menu__list {
         width: 360px;
     }
+    .assortment {
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 360px) {
+    .title {
+        margin-bottom: 10px;
+    }
     .logo {
         margin-right: 50px;
     }
@@ -365,6 +397,12 @@ button {
     .blockquote__text {
         max-width: 340px;
         margin-top: 70px;
+        margin-bottom: 80px;
+    }
+    .assortment__img {
+        max-width: 170px;
+    }
+    .assortment {
         margin-bottom: 80px;
     }
 }
