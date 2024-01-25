@@ -2,7 +2,45 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.title {
+.reviews {
+    padding: 50px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.reviews__title {
     text-align: center;
+    margin-bottom: 60px;
     font-size: 36px;
+    font-weight: 400;
+}
+
+.reviews__title img {
+    max-width: 197px;
+    max-height: 205px;
+}
+.reviews__column {
+    display: flex;
+    gap: 0 30px;
+}
+.reviews__row {
+    display: flex;
+    flex-direction: column;
+}
+.reviews__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.reviews__name {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.reviews__text {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+
 }
