@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/verstka/prac/style.css">
 </head>
 <body>
+    <div class="menu--close"></div>
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -16,7 +17,18 @@
                     <a href="#">Лого</a>
                 </div>
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="header__list">
+                        <li class="menu__close">
+                            <button class="menu__close-btn">
+                                <img src="/verstka/tea/images/icon.svg" alt="">
+                            </button>
+                        </li>
                         <li class="header__item">
                             <a href="#" class="header__link">О нас</a>
                         </li>
@@ -37,6 +49,31 @@
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__link">Личный кабинет</a>
+                        </li>
+                        <li class="mobile-nav">
+                            <ul class="mobile-menu">
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">О нас</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Мастер-классы</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Отзывы</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Котакты</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Корзина</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Избранное</a>
+                                </li>
+                                <li class="mobile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Личный кабинет</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -187,5 +224,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="/verstka/prac/script.js"></script>
 </body>
 </html>

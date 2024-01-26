@@ -35,6 +35,24 @@
     padding-right: 68px;
 }
 
+.menu__btn {
+    display: none;
+    width: 40px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}
+
+.menu__btn span {
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+}
+
+
 .header__item:hover {
     opacity: .2;
 }
@@ -306,6 +324,33 @@
 
 }
 
+/* -----------MOBILE-MENU------------ */
+
+.mobile-nav,
+.menu__close-btn {
+    display: none;
+}
+
+.menu__close-btn {
+
+}
+
+.menu--close {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background-color .3s ease;
+}
+
+.menu--close.header--open {
+    display: block;
+}
+
 /* -------------FOOTER------------- */
 
 .footer {
@@ -343,4 +388,60 @@
 }
 
 .footer__link {
+}
+
+@media (max-width: 860px) {
+    .mobile-nav,
+    .menu__close-btn {
+        display: block;
+    }
+    .header__list {
+        transform: translateY(-100%);
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 480px;
+        margin: 0 auto;
+        background-color: #fff;
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+        transition: transform .6s ease;
+        z-index: 99;
+    }
+    .header__list.header__list--open {
+        transform: translateY(0%);
+    }
+    .menu__close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .menu__btn {
+        display: flex;
+    }
+    .header__item {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .mobile-menu {
+        padding-top: 60px;
+        margin: 60px 30px;
+        border-top: 2px solid #F7F2EA;
+    }
+    .mobile-menu__item {
+        margin-bottom: 35px;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    .menu {
+        order: -1;
+        margin-right: 0;
+    }
+    .logo {
+        margin-left: auto;
+        margin-right: 154px;
+    }
 }
