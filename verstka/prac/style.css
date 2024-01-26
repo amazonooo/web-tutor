@@ -35,6 +35,10 @@
     padding-right: 68px;
 }
 
+.header__item:hover {
+    opacity: .2;
+}
+
 .header__link {
 }
 
@@ -57,10 +61,18 @@
     top: 230px;
 }
 
+.arrow__right:hover {
+    opacity: .2;
+}
+
 .arrow__left {
     position: absolute;
     left: 0;
     top: 230px;
+}
+
+.arrow__left:hover {
+    opacity: .2;
 }
 
 /* .title::before {
@@ -110,7 +122,8 @@
 }
 
 .item__image img {
-    border-radius: 7px;
+    max-width: 585px;
+    min-height: 460px;
 }
 .item__body {
     flex: 1 1 auto;
@@ -208,12 +221,54 @@
     font-weight: 400;
 } */
 
-.reviews {
-    padding: 50px;
+.subsribe {
+    background: #D9D9D9;
+    display: flex;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.subsribe__body {
+    padding-top: 66px;
+    padding-bottom: 80px;
+}
+.subsribe__title {
+    padding-bottom: 31px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+.subsribe__inner {
+    display: flex;
+    position: relative;
+}
+.subsribe__email {
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 22px;
+    min-width: 220px;
+}
+.subsribe__email p {
+    opacity: .3;
+    font-size: 18px;
+}
+
+.subsribe__button {
+    background: #A2A2A2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 55px;
+    min-width: 220px;
+    font-size: 18px;
+}
+
+.subsribe__button p:hover {
+    transform: scale(1.25);
+}
+
+.reviews {
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .reviews__title {
     text-align: center;
@@ -249,4 +304,43 @@
     line-height: 21px;
     font-weight: 400;
 
+}
+
+/* -------------FOOTER------------- */
+
+.footer {
+    background: #D9D9D9;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.footer__logo {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+.menu {
+}
+.footer__list {
+    display: flex;
+    gap: 22px;
+}
+.footer__item {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__item:hover {
+    opacity: .2;
+}
+
+.footer__item:nth-child(4) {
+    padding-right: 252px;
+}
+
+.footer__link {
 }
