@@ -3,7 +3,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -142,7 +142,9 @@
 .item__image img {
     max-width: 585px;
     min-height: 460px;
+    border-radius: 25px;
 }
+
 .item__body {
     flex: 1 1 auto;
     padding-left: 30px;
@@ -158,93 +160,51 @@
     width: 100%;
 }
 
-.masters {
-    margin-top: 60px;
-    height: 700px;
-}
-
-
-/* .masters__cards {
-    max-width: 278px;
-    min-height: 280px;
-}
-
-.masters__card {
-}
-
-.masters__card:hover {
-
-}
-
-.masters__card-image {
-}
-.masters__body {
-    padding: 20px 0;
-}
-.masters__card-title {
-    font-size: 28px;
-    font-weight: 400;
-}
-.masters__card-text {
-    padding-top: 13px;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 400;
-}
-.masters__card-price {
-    padding-top: 13px;
-    font-size: 28px;
-    font-weight: 400;
-} */
-
-/* .masters__cards {
+.masters__column {
     display: flex;
-    flex-wrap: wrap;
+}
+.masters__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 60px;
 }
 .masters__row {
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 85px 30px;
 }
-.masters__card {
-    min-height: 277px;
+.masters__item {
+    min-height: 479px;
     max-width: 278px;
-    padding-right: 30px;
 }
-
-.masters__card-image {
-    padding-bottom: 18px;
+.masters__image img{
+    border-radius: 25px;
 }
-
-.masters__card-image img{
-
-    border-radius: 7px;
-}
-.masters__body {
-}
-
-.masters__card-title {
-    padding-bottom: 13px;
+.masters-card__title {
     font-size: 28px;
     font-weight: 400;
+    padding-top: 15px;
 }
-
 .masters__text {
-    padding-bottom: 13px;
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
+    padding-top: 15px;
 }
-
 .masters__price {
+    padding-top: 15px;
     font-size: 28px;
     font-weight: 400;
-} */
+}
 
 .subsribe {
     background: #D9D9D9;
     display: flex;
+    margin: 60px 0;
 }
 .subsribe__body {
-    padding-top: 66px;
+    margin-top: 66px;
     padding-bottom: 80px;
 }
 .subsribe__title {
@@ -255,7 +215,7 @@
 }
 .subsribe__inner {
     display: flex;
-    position: relative;
+    position: relative; 
 }
 .subsribe__email {
     background: #FFF;
@@ -265,6 +225,7 @@
     padding: 15px 22px;
     min-width: 220px;
 }
+
 .subsribe__email p {
     opacity: .3;
     font-size: 18px;
@@ -281,7 +242,8 @@
 }
 
 .subsribe__button p:hover {
-    transform: scale(1.25);
+    transform: scale(1.15); 
+    transition: all .2s ease-in;
 }
 
 .reviews {
@@ -313,6 +275,12 @@
     justify-content: center;
     padding-bottom: 20px;
 }
+
+.reviews__image:hover {
+    transform: scale(1.10);
+    transition: all .2s ease-in;
+}
+
 .reviews__name {
     text-align: center;
     padding-bottom: 20px;
