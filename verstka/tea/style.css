@@ -44,6 +44,10 @@ button {
     margin-bottom: 35px;
 }
 
+.logo:hover {
+    transform: scale(1.15);
+}
+
 .menu {
 
 }
@@ -96,8 +100,8 @@ button {
     display: block;
 }
 
-.menu__item {
-
+.menu__item:hover {
+    opacity: .2;
 }
 
 .menu__link {
@@ -205,6 +209,10 @@ button {
     max-height: 208px;
     width: 100%;
 }
+
+.assortment__img:hover {
+    transform: scale(1.15);
+} 
 
 .assortment__name {
     padding-top: 10px;
