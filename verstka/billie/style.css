@@ -1,0 +1,100 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .header {
+    
+} */
+
+/* .container {
+    margin: 0 auto;
+    max-width: 1200px;
+} */
+
+/* .header__item {
+    padding: 70px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+.header__link {
+} */
+
+.info__inner {
+    display: flex;
+    margin-top: 136px;
+    flex-direction: column;
+}
+.info__text {
+    text-align: center;
+}
+.info__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.main__image {
+    max-width: 100%;
+    min-height: 600px;
+    background-image: url(../billie/images/Rectangle\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.about__title {
+    text-align: left;
+}
+.about__text {
+}
+.about__images {
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .header__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .info__inner {
+        margin-top: 40px;
+    }
+    .info__text {
+        text-align: center;
+        padding: 0 45px;
+        font-size: 20px;
+    }
+    .info__button {
+        margin-top: 40px;
+    }
+    .info__button button {
+        background: transparent;
+        padding: 15px 25px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .about__inner {
+        margin-top: 40px;
+    }
+    .about__title{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .about__text {
+        padding-top: 25px;
+    }
+}
+
