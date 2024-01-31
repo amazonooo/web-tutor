@@ -95,7 +95,7 @@
 }
 
 .about__images img {
-    max-width: 500px;
+    max-width: 1026px;
 }
 
 .services {
@@ -137,7 +137,119 @@
 .services__price {
     text-align: center;
     font-size: 28px;
-    padding-top: 30px;
+    padding: 30px 0;
     font-weight: 500;
+}
+
+.portfolio {
+    margin-top: 100px;
+}
+
+
+.portfolio__title {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.portfolio__text {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.portfolio__image {
+    margin-top: 50px;
+}
+
+.portfolio__image img{
+    max-width: 1026px;
+}
+
+.portfolio__button {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    padding: 35px 0;
+}
+
+.portfolio__button button{
+    background: transparent;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.portfolio__main {
+    margin-top: 120px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.portfolio__main-image {
+}
+
+.FAQ {
+    margin-top: 100px;
+}
+
+.FAQ__title {
+    font-size: 50px;
+    font-weight: 400;
+}
+.FAQ__item {
+    margin-top: 50px;
+}
+.FAQ__line {
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    height: 2px;
+    background-color: #000;
+}
+.FAQ__text {
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.FAQ__text-1::after {
+    content: ' \002b';
+    padding-left: 635px;
+}
+
+.FAQ__text-2::after {
+    content: ' \002b';
+    padding-left: 787px;
+}
+
+.FAQ__text-3::after {
+    content: ' \002b';
+    padding-left: 681px;
+}
+
+.contacts {
+    margin-top: 100px;
+}
+
+.contacts__title {
+    font-size: 50px;
+    font-weight: 400;
+}
+.contacts__button {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    padding: 35px 0;
+}
+
+.contacts__button button {
+    background: transparent;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.btn {
 }
 
