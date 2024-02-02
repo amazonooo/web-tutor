@@ -291,7 +291,6 @@
 
 .plans {
     margin-top: 70px;
-    height: 1000px;
 }
 
 /* .plans__container {
@@ -506,3 +505,245 @@
     line-height: 24px;
 }
 
+.calculate {
+    margin-top: 80px;
+}
+
+.calculate__body {
+    display: flex;
+    padding-top: 70px;
+}
+
+.calculate__title {
+    color: rgb(51, 51, 51);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    max-width: 480px;
+}
+
+.calculate__text {
+    margin-left: 222px;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0;
+    max-width: 470px;
+    min-height: 99px;
+}
+
+.price {
+    margin-top: 67px;
+}
+
+.price__block {
+    display: flex;
+    position: relative;
+}
+
+.price__invest {
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 7px;
+    min-width: 370px;
+}
+
+.price__invest-title {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 33%;
+    text-transform: uppercase;
+    padding-left: 32px;
+    padding-top: 30px;
+}
+
+.price__invest-title span {
+    padding-left: 20px;
+}
+
+.price__invest-price {
+    padding-top: 28px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 64px;
+}
+
+.price__invest-text {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.price__invest-loader {
+    background-color: #0076FF;
+    max-width: 320px;
+    height: 8px;
+    margin-top: 35px;
+    margin-left: 32px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 380px;
+    border-radius: 3px;
+    background: rgb(0, 118, 255);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 13px 117px;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+.price__profit {
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 7px;
+    min-width: 775px;
+    margin-left: 35px;
+}
+
+.price__profit-title {
+    color: rgb(51, 51, 51);
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 33%;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-left: 32px;
+}
+
+.price__profit-title span {
+    padding-left: 20px;
+}
+
+.price__profit-text-title1 {
+    padding-top: 30px;
+    padding-left: 72px;
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.price__profit-text-title2 {
+    padding-top: 30px;
+    padding-left: 72px;
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.price__profit-text-title3 {
+    padding-top: 30px;
+    padding-left: 72px;
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.price__profit-text {
+    padding-left: 72px;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.price__profit-text--1 {
+    padding-left: 72px;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 40px;
+}
+
+.price__profit-text-title1::after {
+    content: url(../vpn/images/plus.svg);
+    margin-left: 300px;
+}
+
+.price__profit-text-title2::after {
+    content: url(../vpn/images/plus.svg);
+    margin-left: 520px;
+}
+
+.price__profit-text-title3::after {
+    content: url(../vpn/images/plus.svg);
+    margin-left: 551.5px;
+}
+
+.footer {
+    margin-top: 200px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    gap: 80px;
+}
+
+.footer__item {
+    color: rgb(30, 30, 30);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.footer__item:hover {
+    opacity: .5;
+}
+
+.footer__link {
+}
+
+.footer__down {
+    margin-top: 170px;
+}
+
+.footer__down-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__down-list {
+    display: flex;
+    gap: 35px;
+}
+
+.footer__down-socials {
+    display: flex;
+    padding-bottom: 50px;
+    gap: 8px;
+}
+
+.footer__down-socials:hover {
+    opacity: .5;
+}
+
+.footer__down-link {
+}
+
+.footer__down-socials-item {
+
+}
