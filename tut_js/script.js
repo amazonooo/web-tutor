@@ -1,18 +1,17 @@
-let answers = [],
-    questions = [
-        'Как ваше имя?',
-        'Как ваша фамилия?',
-        'Сколько вам лет?'
-    ];
+let age = 14;
+let question = prompt("Ваш возраст?");
 
-// for (let i = 0; i < questions.length; i++) {
-//     answers[i] = prompt(questions[i]);
+// if (question >= 18) {
+//     alert("Входите");
+// } else {
+    
 // }
 
-let i = 0;
-do {
-    answers[i] = prompt(questions[i])
-    i++
-} while (i < questions.length);
-
-console.log(answers);
+switch (age) {
+    case '18':
+        alert("Входите");
+        break;
+    case '100':
+        alert("нет");
+        break;
+}
