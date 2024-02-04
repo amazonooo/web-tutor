@@ -62,3 +62,54 @@
     min-height: 600px;
 }
 
+.gifts {
+    height: 1500px;
+}
+.gifts__inner {
+}
+.gifts__image {
+    position: relative;
+    z-index: 0;
+}
+.gifts__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.gifts__block {
+    position: absolute;
+    top: 400px;
+    max-width: 320px;
+}
+.gifts__title {
+    color: rgb(60, 64, 67);
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 2px;
+
+}
+.gifts__text {
+    padding-top: 22px;
+    color: rgb(60, 64, 67);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.gifts__button {
+    padding-top: 22px;
+}
+
+.gifts__button button {
+    border: 2px solid rgb(60, 64, 67);
+    border-radius: 4px;
+    background: transparent;
+    padding: 8px 20px;
+}
+
+.gifts__button span {
+    padding-left: 22px;
+    color: rgb(60, 64, 67);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
