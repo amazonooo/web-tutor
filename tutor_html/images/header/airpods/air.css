@@ -73,6 +73,11 @@ body {
     margin-top: 10px;
 }
 
+.menu-link:hover {
+    color: #6e6d6d;
+    transition: all .2s ease;
+}
+
 .menu-btn {
     padding: 15px 58px;
     border-radius: 30px;
@@ -85,6 +90,10 @@ body {
 .header-content-images {
     text-align: center;
     padding-bottom: 50px;
+}
+
+.header-content-images:hover {
+
 }
 
 .header-content-images::before {
@@ -176,6 +185,11 @@ body {
     border: 1px solid #777;
     border-radius: 20px;
     padding: 50px 55px;
+}
+
+.choose-color-btn img:hover {
+    transform: scale(1.15);
+    transition: all .5s ease;
 }
 
 .choose-color-btn-active {
