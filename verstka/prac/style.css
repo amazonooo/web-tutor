@@ -54,10 +54,13 @@
 
 
 .header__item:hover {
+    transform: scale(1.05);
     opacity: .2;
+    transition: all 0.3s ease;
 }
 
-.header__link {
+.header__link:hover {
+
 }
 
 .images {
