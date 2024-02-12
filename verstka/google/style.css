@@ -109,12 +109,17 @@
     border-radius: 4px;
     background: transparent;
     padding: 8px 20px;
+    box-shadow: 5px 5px 2px #000;
 }
 
 .gifts__button button:hover {
     transform: scale(1.15);
     transition: all .5s ease;
     box-shadow: 8px 8px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.gifts__button button:active {
+    
 }
 
 .gifts__button span {
