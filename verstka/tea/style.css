@@ -219,7 +219,7 @@ button {
 
 .assortment__img:hover {
     transform: scale(1.15);
-    transition: all .3s;
+    transition: transform .3s;
 } 
 
 .assortment__name {
@@ -229,6 +229,16 @@ button {
     font-family: 'Cormorant', sans-serif;
 }
 
+.animation {
+    animation: scaleObj 1s;
+    animation-delay: .7s;
+}
+
+@keyframes scaleObj {
+    to {
+        transform: scale(1.15);
+    }
+}
 
 .reviews {
     background: rgb(247, 242, 234);
@@ -336,7 +346,116 @@ button {
     line-height: 27px;
 }
 
+.mailing {
+    margin-top: 150px;
+    background-color: #f7f2EA;
+    background-image: url(../tea/images/mailing-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
 
+.mailing__title {
+    padding: 50px 0;
+    color: rgb(21, 22, 24);
+    font-family: Cormorant;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+}
+.mailing__inner {
+    display: flex;
+    gap: 60px 40px;
+}
+.mailing__text {
+    color: rgb(21, 22, 24);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+}
+.mailing__form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.mailing__email {
+    background: transparent;
+    border: none;
+    padding: 3px 15px;
+    border-bottom: 1px solid rgb(184, 181, 139);
+    width: 440px;
+}
+.mailing__email::placeholder {
+    color: rgb(184, 181, 139);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+}
+.mailing__btn {
+    border: 1px solid rgb(21, 22, 24);
+    background: rgb(255, 255, 255);
+    padding: 12px 41px;
+    margin-left: 25px;
+}
+.mailing__btn button {
+    font-size: 20px;
+}
+.checkbox {
+}
+.mailing__style {
+
+}
+.checkbox__text {
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+
+.prioritise {
+    padding-top: 150px;
+}
+
+.prioritise__block {
+}
+.prioritise__title {
+    text-align: center;
+    font-family: Cormorant;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.prioritise__inner {
+    padding-top: 60px;
+    display: flex;
+    gap: 30px 50px;
+    flex-wrap: wrap;
+}
+.prioritise__item {
+    max-width: 295px;
+}
+.prioritise__name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0%;
+}
+.prioritise__text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 10px;
+}
+.prioritise__image {
+    text-align: center;
+    margin-top: 40px;
+}
 
 
 /* ------ADAPTIVE------ */
@@ -372,6 +491,12 @@ button {
     }
     .reviews__list.del{
         display: none;
+    }
+    .prioritise__inner {
+        gap: 30px 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -466,6 +591,9 @@ button {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .prioritise__inner {
+        gap: 30px 133px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -486,6 +614,11 @@ button {
         max-width: 376px;
         margin-top: 60px;
         margin-bottom: 60px;
+    }
+    .prioritise__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 55px 0px;
     }
 }
 
@@ -509,6 +642,11 @@ button {
     .reviews__list {
         max-width: 220px;
         padding-top: 20px;
+    }
+    .prioritise__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px 0px;
     }
 }
 
@@ -559,5 +697,12 @@ button {
     .title {
         font-size: 24px; 
         line-height: 29px; 
+    }
+    .prioritise__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0px;
+        justify-content: center;
+        align-items: center;
     }
 }
