@@ -1,5 +1,12 @@
 body {
   background-color: #fff;
 }
-
-/*# sourceMappingURL=style.css.map */
+body h2 {
+  font-size: 323px;
+  margin: 0;
+  background: fixed;
+}
+body p {
+  font-size: 12px;
+  color: aqua;
+}/*# sourceMappingURL=style.css.map */
