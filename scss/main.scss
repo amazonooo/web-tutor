@@ -2,6 +2,25 @@
 @import "./block/_footer";
 @import "./block/_header";
 
-h2 {
-    font-size: 122px;
+// Миксины
+@mixin canvas {
+    padding: 20px;
+    font-size: 21px;
 }
+
+// Создание переменной
+$blue-color: #0000ff;
+// & - вложенность!
+
+.header {
+    // использование миксина
+    @include canvas
+}
+
+.header {
+    background-color: #fff;
+    & a {
+        color: $blue-color;
+    }
+}
+
