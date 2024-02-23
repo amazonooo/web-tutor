@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    box-shadow: 0 4px 21px -1px rgba(34, 60, 80, 0.13);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu__burger-btn {
+    z-index: 3;
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+.menu__burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 5px;
+    background-color: #000;
+    transition: transform .5s, opacity .5s,  background-color .5s;
+}
+
+.menu__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+.menu__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .menu__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+.header.open .menu__burger-btn span {
+    background-color: #fff;
+}
+
+.header.open .menu__burger-btn span:nth-child(2) {
+    display: none;
+}
+
+.header.open .menu__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: block;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+.menu__item{
+    position: relative;
+}
+.menu__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu__link {
+    font-size: 16px;
+}
+
+.menu__link:hover::before {
+    width: 100%;
+}
+
+.menu__link::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: .3s ease;
+}
+
+@media (max-width: 992px) {
+    .menu__burger-btn {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        left: -350px;
+        top: 0;
+        width: 350px;
+        background-color: lightblue;
+        padding: 75px 20px 20px 20px;
+        transition: transform .5s;
+    }
+    .menu__list {
+        display: block;
+    }
+    .menu__link {
+        color: #fff;
+        font-size: 21px;
+        display: block;
+        padding: 10px 0;
+    }
+    .header.open .menu{
+        transform: translateX(100%);
+    }
+}
