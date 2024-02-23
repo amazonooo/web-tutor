@@ -28,7 +28,7 @@
     height: 3px;
     left: 5px;
     background-color: #000;
-    transition: transform .5s, opacity .5s,  background-color .5s;
+    transition: transform .5s, display .5s,  background-color .5s;
 }
 
 .menu__burger-btn span:nth-child(1) {
@@ -104,7 +104,7 @@
         left: -350px;
         top: 0;
         width: 350px;
-        background-color: rgb(168, 193, 201);
+        background-color: lightblue;
         padding: 75px 20px 20px 20px;
         transition: transform .5s;
         box-shadow: 0 4px 21px -1px rgba(34, 60, 80, 0.13);
