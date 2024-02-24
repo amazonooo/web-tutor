@@ -77,3 +77,11 @@ window.addEventListener('DOMContentLoaded', function () {
     cartBtn.addEventListener('click', openCart);
     close.addEventListener('click', closeCart)
 })
+
+
+const header = document.querySelector('.header');
+const burger = document.querySelector('.burger__btn');
+
+burger.addEventListener('click', () => {
+    header.classList.toggle('open')
+})
