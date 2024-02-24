@@ -72,6 +72,7 @@ body {
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    justify-content: center;
 }
 
 .navigation ul li {
@@ -105,4 +106,46 @@ body {
 .navigation ul li.active a .icon {
     background: var(--clr);
     color: #fff;
+}
+
+.navigation ul li a .icon::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    filter: blur(8px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navigation ul li.active a .icon::before {
+    opacity: 1;
+}
+
+.navigation ul li a .text {
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.navigation.open ul li a .text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation ul li.active a .text {
+    color: var(--clr);
+}
+
+.navigation ul li.active {
+    transform: translateX(15px)
 }
