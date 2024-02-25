@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url(../tea/images/bg.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    box-shadow: 0 4px 21px -1px rgba(228, 230, 231, 0.897);
+    background-color: #000;
+}
+
+.burger__btn {
+    display: none;
+    z-index: 3;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+}
+
+
+.burger__btn span {
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 5px;
+    background: #fff;
+    transition: transform .5s, display .5s, background-color .5s, display .5s;
+}
+
+.burger__btn span:nth-child(1) {
+    transform: translateY(10px);
+}
+
+.header.open .burger__btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    background: #000;
+}
+
+.header.open .burger__btn span:nth-child(2) {
+    display: none;
+}
+
+.header.open .burger__btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    background: #000;
+}
+
+.burger__btn span:nth-child(3) {
+    transform: translateY(-10px);
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu {}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu__link:hover::before {
+    width: 100%;
+}
+
+.menu__link::before {
+    margin-top: 3px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background: #fff;
+    transition: .5s;
+}
+
+@media (max-width: 992px) {
+    .burger__btn {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: -350px;
+        width: 350px;
+        background: #fff;
+        padding: 90px 20px 20px 20px;
+        transition: transform .7s;
+    }
+
+    .menu__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .menu__link {
+        color: #000;
+        font-size: 21px;
+        display: block;
+        padding: 15px 0;
+    }
+
+    .header.open .menu {
+        transform: translateX(100%);
+    }
+    .menu__link::before {
+        background: #000;
+    }
+}
