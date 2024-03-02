@@ -85,3 +85,29 @@ const burger = document.querySelector('.burger__btn');
 burger.addEventListener('click', () => {
     header.classList.toggle('open')
 })
+
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
+if (ScrollTrigger.isTouch !== 1) {
+	ScrollSmoother.create({
+		wrapper: '.wrapper',
+		content: '.content',
+		smooth: 1.5,
+		effects: true,
+	})
+
+    gsap.fromTo(
+        '.gifts__inner',
+        { opacity: 1 },
+        {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.gifts__inner',
+                start: 'center',
+                end: '900',
+                scrub: true
+            }
+        }
+    )
+}

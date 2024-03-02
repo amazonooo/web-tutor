@@ -7,417 +7,424 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/tutor_js/reset.css">
     <link rel="stylesheet" href="/verstka/google/style.css">
+    <script src="/verstka/a/libs/gsap/gsap.min.js" defer></script>
+	<script src="/verstka/a/libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="/verstka/a/libs/gsap/ScrollSmoother.min.js" defer></script>
 </head>
 <body>
-    <div class="free">
-        <div class="free__inner">
-            <div class="free__text">Free shipping. Simple returns. Holiday shopping has never been easier.</div>
-            <div class="free__text2">Shop now.</div>
+    <div class="wrapper">
+        <div class="content">
+            <div class="free">
+                <div class="free__inner">
+                    <div class="free__text">Free shipping. Simple returns. Holiday shopping has never been easier.</div>
+                    <div class="free__text2">Shop now.</div>
+                </div>
+            </div>
+            <header class="header">
+                <div class="container header__container">
+                    <button class="burger__btn">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <a href="#" class="header__link">
+                        <img src="/verstka/google/images/google.svg" alt="">
+                    </a>
+                    <nav class="menu">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link phones">Phones</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link earbuds">Earbuds</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link watches">Watches</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link smart_home">Smart Home</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link laptops">Laptops</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link accessories">Accessories</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link subscriptions">Subscriptions</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link offers">Offers</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    <img src="/verstka/google/images/search.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    <img src="/verstka/google/images/znak.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link cart">
+                                    <img src="/verstka/google/images/cart.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    <img src="/verstka/google/images/user.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="main">
+                <section class="gifts">
+                    <div class="gifts__inner">
+                        <div class="gifts__image">
+                            <img src="/verstka/google/images/main.png" alt="">
+                        </div>
+                        <div class="gifts__container">
+                            <div class="gifts__block">
+                                <div class="gifts__title">Inhale. Gift. Exhale.</div>
+                                <div class="gifts__text">The gifts you need, stress-free. Shop the best of Google with ease.</div>
+                                <div class="gifts__button">
+                                    <button>Browse deals</button>
+                                    <span>Browse the gift guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cards">
+                    <div class="cards__container">
+                        <div class="cards__wrapper">
+                            <div class="cards__title">Sneak a peek. For you or for them.</div>
+                            <div class="cards__block">
+                                <div class="cards__inner">
+                                    <div class="cards__card">
+                                        <div class="cards__text">New</div>
+                                        <div class="cards__image">
+                                            <img src="/verstka/google/images/watch.png" alt="">
+                                        </div>
+                                        <div class="cards__name">Google Pixel Watch</div>
+                                    </div>
+                                    <div class="cards__card">
+                                        <div class="cards__text">New</div>
+                                        <div class="cards__image">
+                                            <img src="/verstka/google/images/7pro.png" alt="">
+                                        </div>
+                                        <div class="cards__name">Pixel 7 Pro</div>
+                                    </div>
+                                    <div class="cards__card">
+                                        <div class="cards__text">New</div>
+                                        <div class="cards__image">
+                                            <img src="/verstka/google/images/7.png" alt="">
+                                        </div>
+                                        <div class="cards__name">Pixel 7</div>
+                                    </div>
+                                    <div class="cards__card">
+                                        <div class="cards__text">New</div>
+                                        <div class="cards__image">
+                                            <img src="/verstka/google/images/buds.png" alt="">
+                                        </div>
+                                        <div class="cards__name">Pixel Buds Pro</div>
+                                    </div>
+                                    <div class="cards__card">
+                                        <div class="cards__text">New</div>
+                                        <div class="cards__image">
+                                            <img src="/verstka/google/images/nest.png" alt="">
+                                        </div>
+                                        <div class="cards__name">Nest Doorbells</div>
+                                    </div>
+                                    <!-- <div class="cards__card">
+                                        <div class="cards__text">New</div>
+                                        <div class="cards__image">
+                                            <img src="/verstka/google/images/wifi.png" alt="">
+                                        </div>
+                                        <div class="cards__name">Nest Wifi Pro</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </section>
+                
+                <section class="nba">
+                    <div class="container">
+                        <div class="nba__wrapper">
+                            <div class="nba__block">
+                                <div class="nba__image">
+                                    <img src="/verstka/google/images/nba.png" alt="">
+                                </div>
+                                <div class="text__block">
+                                    <div class="text__container">
+                                        <div class="text__one">This holiday season, Google Pixel is giving back.</div>
+                                        <div class="text__two">We're contributing $1 million to the NBA Foundation to help advance HBCU students in their careers across STEM, sports, and media industries.</div>
+                                        <div class="text__link">
+                                            <a href="#">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info">
+                    <div class="container">
+                        <div class="info__block">
+                            <div class="info__inner">
+                                <div class="info__row-1">
+                                    <div class="info__card-1">
+                                        <div class="info__card1-name">Google Pixel Watch</div>
+                                        <div class="info__card-text">
+                                            <p>Help by Google.</p>
+                                            <p>Health by Fitbit.</p>
+                                        </div>
+                                        <div class="info__card-link">
+                                            <button>Learn more</button>
+                                        </div>
+                                        <div class="info__card1-image">
+                                            <img src="/verstka/google/images/cardwatch.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info__card-1">
+                                        <div class="info__card1-name">Nest Wifi Pro with Wi-Fi 6E</div>
+                                        <div class="info__card-text">
+                                            <p>The better way</p>
+                                            <p>to Wi-Fi.</p>
+                                        </div>
+                                        <div class="info__card-link">
+                                            <button>Learn more</button>
+                                        </div>
+                                        <div class="info__card1-image">
+                                            <img src="/verstka/google/images/cardwifi.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info__card-1">
+                                        <div class="info__card1-name">Nest Doorbell (wired)</div>
+                                        <div class="info__card-text">
+                                            <p>Know more.</p>
+                                            <p>No charging.</p>
+                                        </div>
+                                        <div class="info__card-link">
+                                            <button>Learn more</button>
+                                        </div>
+                                        <div class="info__card1-image">
+                                            <img src="/verstka/google/images/cardnest.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__row-2">
+                                    <div class="info__card-2--green">
+                                        <div class="info__name">Pixel Pass</div>
+                                        <div class="info__text">
+                                            <p>One price for</p>
+                                            <p>all things Pixel.</p>
+                                        </div>
+                                        <div class="info__link">
+                                            <button>Learn more</button>
+                                        </div>
+                                        <div class="info__image">
+                                            <img src="/verstka/google/images/pass.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info__card-2--cream">
+                                        <div class="info__name">Switch to Pixel</div>
+                                        <div class="info__text">
+                                            <p>Here's what #</p>
+                                            <p>TeamPixel has to</p>
+                                            <p>say about it.</p>
+                                        </div>
+                                        <div class="info__link">
+                                            <button>Learn more</button>
+                                        </div>
+                                        <div class="info__image">
+                                            <img src="/verstka/google/images/men.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="category">
+                    <div class="cards__container">
+                        <div class="category__title">Shop by category.</div>
+                        <div class="category__block">
+                            <div class="category__inner">
+                                <div class="category__card">
+                                    <div class="category__image">
+                                        <img src="/verstka/google/images/cameras.png" alt="">
+                                    </div>
+                                    <div class="category__link"><a href="#">Cameras</a></div>
+                                </div>
+                                <div class="category__card">
+                                    <div class="category__image">
+                                        <img src="/verstka/google/images/doorbells.png" alt="">
+                                    </div>
+                                    <div class="category__link"><a href="#">Doorbells</a></div>
+                                </div>
+                                <div class="category__card">
+                                    <div class="category__image">
+                                        <img src="/verstka/google/images/streaming.png" alt="">
+                                    </div>
+                                    <div class="category__link"><a href="#">Streaming</a></div>
+                                </div>
+                                <div class="category__card">
+                                    <div class="category__image">
+                                        <img src="/verstka/google/images/packages.png" alt="">
+                                    </div>
+                                    <div class="category__link"><a href="#">Packages</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="products">
+                    <div class="container">
+                        <div class="products__wrapper">
+                            <div class="products__block">
+                                <div class="products__card-watch">
+                                    <div class="products__card-name">Watches</div>
+                                    <div class="products__card-text">
+                                        <p>Keep moving.</p>
+                                        <p>Keep improving.</p>
+                                    </div>
+                                    <div class="products__card-link">
+                                        <button>Explore watches</button>
+                                    </div>
+                                    <div class="products__card-image">
+                                        <img src="/verstka/google/images/watches.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="products__card-earbuds">
+                                    <div class="products__card-name">Earbuds</div>
+                                    <div class="products__card-text">
+                                        <p>Great sound.</p>
+                                        <p>All around.</p>
+                                    </div>
+                                    <div class="products__card-link">
+                                        <button>Explore earbuds</button>
+                                    </div>
+                                    <div class="products__card-image">
+                                        <img src="/verstka/google/images/earbuds.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sustainability">
+                    <div class="container">
+                        <div class="sustainability__wrapper">
+                            <div class="sustainability__block">
+                                <div class="sustainability__image">
+                                    <img src="/verstka/google/images/children.png" alt="">
+                                </div>
+                                <div class="sustainability__text-block">
+                                    <div class="sustainability__title">
+                                    <p>Putting sustainability</p>
+                                    <p class="left">to work.</p>
+                                    </div>
+                                    <div class="sustainability__text">
+                                        <p>We're committed to using recycled or renewable</p>
+                                        <p>material in all Pixel, Nest, and Fitbit products by 2025.</p>
+                                    </div>
+                                    <div class="sustainability__link">
+                                        <button>Learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="notes">
+                    <div class="notes__wrapper">
+                        <div class="notes__inner">
+                            <div class="notes__image">
+                                <img src="/verstka/google/images/notes.svg" alt="">
+                            </div>
+                            <div class="notes__text">
+                                <p>Keep me updated about devices, news,</p>
+                                <p>tips, and offers from Google Store.</p>
+                            </div>
+                            <div class="notes__button">
+                                <button>Log in and sign up</button>
+                            </div>
+                            <div class="notes__link">
+                                <a href="#">or enter email address</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <ul class="socials">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <img src="/verstka/google/images/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <img src="/verstka/google/images/insta.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <img src="/verstka/google/images/face.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <img src="/verstka/google/images/you.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <img src="/verstka/google/images/tt.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <img src="/verstka/google/images/usa.svg" alt="">
+                                    <span>United States</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Privacy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Google Nest Commitment to Privacy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Sales Terms</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Terms of Service</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    <header class="header">
-        <div class="container header__container">
-            <button class="burger__btn">
-                <span></span><span></span><span></span>
-            </button>
-            <a href="#" class="header__link">
-                <img src="/verstka/google/images/google.svg" alt="">
-            </a>
-            <nav class="menu">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#" class="header__link phones">Phones</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link earbuds">Earbuds</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link watches">Watches</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link smart_home">Smart Home</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link laptops">Laptops</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link accessories">Accessories</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link subscriptions">Subscriptions</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link offers">Offers</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">
-                            <img src="/verstka/google/images/search.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">
-                            <img src="/verstka/google/images/znak.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link cart">
-                            <img src="/verstka/google/images/cart.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">
-                            <img src="/verstka/google/images/user.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-        <section class="gifts">
-            <div class="gifts__inner">
-                <div class="gifts__image">
-                    <img src="/verstka/google/images/main.png" alt="">
-                </div>
-                <div class="gifts__container">
-                    <div class="gifts__block">
-                        <div class="gifts__title">Inhale. Gift. Exhale.</div>
-                        <div class="gifts__text">The gifts you need, stress-free. Shop the best of Google with ease.</div>
-                        <div class="gifts__button">
-                            <button>Browse deals</button>
-                            <span>Browse the gift guide</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cards">
-            <div class="cards__container">
-                <div class="cards__wrapper">
-                    <div class="cards__title">Sneak a peek. For you or for them.</div>
-                    <div class="cards__block">
-                        <div class="cards__inner">
-                            <div class="cards__card">
-                                <div class="cards__text">New</div>
-                                <div class="cards__image">
-                                    <img src="/verstka/google/images/watch.png" alt="">
-                                </div>
-                                <div class="cards__name">Google Pixel Watch</div>
-                            </div>
-                            <div class="cards__card">
-                                <div class="cards__text">New</div>
-                                <div class="cards__image">
-                                    <img src="/verstka/google/images/7pro.png" alt="">
-                                </div>
-                                <div class="cards__name">Pixel 7 Pro</div>
-                            </div>
-                            <div class="cards__card">
-                                <div class="cards__text">New</div>
-                                <div class="cards__image">
-                                    <img src="/verstka/google/images/7.png" alt="">
-                                </div>
-                                <div class="cards__name">Pixel 7</div>
-                            </div>
-                            <div class="cards__card">
-                                <div class="cards__text">New</div>
-                                <div class="cards__image">
-                                    <img src="/verstka/google/images/buds.png" alt="">
-                                </div>
-                                <div class="cards__name">Pixel Buds Pro</div>
-                            </div>
-                            <div class="cards__card">
-                                <div class="cards__text">New</div>
-                                <div class="cards__image">
-                                    <img src="/verstka/google/images/nest.png" alt="">
-                                </div>
-                                <div class="cards__name">Nest Doorbells</div>
-                            </div>
-                            <!-- <div class="cards__card">
-                                <div class="cards__text">New</div>
-                                <div class="cards__image">
-                                    <img src="/verstka/google/images/wifi.png" alt="">
-                                </div>
-                                <div class="cards__name">Nest Wifi Pro</div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
-            </div>
-        </section>
-        
-        <section class="nba">
-            <div class="container">
-                <div class="nba__wrapper">
-                    <div class="nba__block">
-                        <div class="nba__image">
-                            <img src="/verstka/google/images/nba.png" alt="">
-                        </div>
-                        <div class="text__block">
-                            <div class="text__container">
-                                <div class="text__one">This holiday season, Google Pixel is giving back.</div>
-                                <div class="text__two">We're contributing $1 million to the NBA Foundation to help advance HBCU students in their careers across STEM, sports, and media industries.</div>
-                                <div class="text__link">
-                                    <a href="#">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="info">
-            <div class="container">
-                <div class="info__block">
-                    <div class="info__inner">
-                        <div class="info__row-1">
-                            <div class="info__card-1">
-                                <div class="info__card1-name">Google Pixel Watch</div>
-                                <div class="info__card-text">
-                                    <p>Help by Google.</p>
-                                    <p>Health by Fitbit.</p>
-                                </div>
-                                <div class="info__card-link">
-                                    <button>Learn more</button>
-                                </div>
-                                <div class="info__card1-image">
-                                    <img src="/verstka/google/images/cardwatch.png" alt="">
-                                </div>
-                            </div>
-                            <div class="info__card-1">
-                                <div class="info__card1-name">Nest Wifi Pro with Wi-Fi 6E</div>
-                                <div class="info__card-text">
-                                    <p>The better way</p>
-                                    <p>to Wi-Fi.</p>
-                                </div>
-                                <div class="info__card-link">
-                                    <button>Learn more</button>
-                                </div>
-                                <div class="info__card1-image">
-                                    <img src="/verstka/google/images/cardwifi.png" alt="">
-                                </div>
-                            </div>
-                            <div class="info__card-1">
-                                <div class="info__card1-name">Nest Doorbell (wired)</div>
-                                <div class="info__card-text">
-                                    <p>Know more.</p>
-                                    <p>No charging.</p>
-                                </div>
-                                <div class="info__card-link">
-                                    <button>Learn more</button>
-                                </div>
-                                <div class="info__card1-image">
-                                    <img src="/verstka/google/images/cardnest.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info__row-2">
-                            <div class="info__card-2--green">
-                                <div class="info__name">Pixel Pass</div>
-                                <div class="info__text">
-                                    <p>One price for</p>
-                                    <p>all things Pixel.</p>
-                                </div>
-                                <div class="info__link">
-                                    <button>Learn more</button>
-                                </div>
-                                <div class="info__image">
-                                    <img src="/verstka/google/images/pass.png" alt="">
-                                </div>
-                            </div>
-                            <div class="info__card-2--cream">
-                                <div class="info__name">Switch to Pixel</div>
-                                <div class="info__text">
-                                    <p>Here's what #</p>
-                                    <p>TeamPixel has to</p>
-                                    <p>say about it.</p>
-                                </div>
-                                <div class="info__link">
-                                    <button>Learn more</button>
-                                </div>
-                                <div class="info__image">
-                                    <img src="/verstka/google/images/men.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="category">
-            <div class="cards__container">
-                <div class="category__title">Shop by category.</div>
-                <div class="category__block">
-                    <div class="category__inner">
-                        <div class="category__card">
-                            <div class="category__image">
-                                <img src="/verstka/google/images/cameras.png" alt="">
-                            </div>
-                            <div class="category__link"><a href="#">Cameras</a></div>
-                        </div>
-                        <div class="category__card">
-                            <div class="category__image">
-                                <img src="/verstka/google/images/doorbells.png" alt="">
-                            </div>
-                            <div class="category__link"><a href="#">Doorbells</a></div>
-                        </div>
-                        <div class="category__card">
-                            <div class="category__image">
-                                <img src="/verstka/google/images/streaming.png" alt="">
-                            </div>
-                            <div class="category__link"><a href="#">Streaming</a></div>
-                        </div>
-                        <div class="category__card">
-                            <div class="category__image">
-                                <img src="/verstka/google/images/packages.png" alt="">
-                            </div>
-                            <div class="category__link"><a href="#">Packages</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="products">
-            <div class="container">
-                <div class="products__wrapper">
-                    <div class="products__block">
-                        <div class="products__card-watch">
-                            <div class="products__card-name">Watches</div>
-                            <div class="products__card-text">
-                                <p>Keep moving.</p>
-                                <p>Keep improving.</p>
-                            </div>
-                            <div class="products__card-link">
-                                <button>Explore watches</button>
-                            </div>
-                            <div class="products__card-image">
-                                <img src="/verstka/google/images/watches.png" alt="">
-                            </div>
-                        </div>
-                        <div class="products__card-earbuds">
-                            <div class="products__card-name">Earbuds</div>
-                            <div class="products__card-text">
-                                <p>Great sound.</p>
-                                <p>All around.</p>
-                            </div>
-                            <div class="products__card-link">
-                                <button>Explore earbuds</button>
-                            </div>
-                            <div class="products__card-image">
-                                <img src="/verstka/google/images/earbuds.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sustainability">
-            <div class="container">
-                <div class="sustainability__wrapper">
-                    <div class="sustainability__block">
-                        <div class="sustainability__image">
-                            <img src="/verstka/google/images/children.png" alt="">
-                        </div>
-                        <div class="sustainability__text-block">
-                            <div class="sustainability__title">
-                               <p>Putting sustainability</p>
-                               <p class="left">to work.</p>
-                            </div>
-                            <div class="sustainability__text">
-                                <p>We're committed to using recycled or renewable</p>
-                                <p>material in all Pixel, Nest, and Fitbit products by 2025.</p>
-                            </div>
-                            <div class="sustainability__link">
-                                <button>Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="notes">
-            <div class="notes__wrapper">
-                <div class="notes__inner">
-                    <div class="notes__image">
-                        <img src="/verstka/google/images/notes.svg" alt="">
-                    </div>
-                    <div class="notes__text">
-                        <p>Keep me updated about devices, news,</p>
-                        <p>tips, and offers from Google Store.</p>
-                    </div>
-                    <div class="notes__button">
-                        <button>Log in and sign up</button>
-                    </div>
-                    <div class="notes__link">
-                        <a href="#">or enter email address</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <ul class="socials">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <img src="/verstka/google/images/twitter.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <img src="/verstka/google/images/insta.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <img src="/verstka/google/images/face.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <img src="/verstka/google/images/you.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <img src="/verstka/google/images/tt.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            <img src="/verstka/google/images/usa.svg" alt="">
-                            <span>United States</span>
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Privacy</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Google Nest Commitment to Privacy</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Sales Terms</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Terms of Service</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Careers</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </body>
 
     <script src="/verstka/google/script.js"></script>
