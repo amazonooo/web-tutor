@@ -49,39 +49,194 @@
 }
 
 
-.main {}
-
-.order__wrapper {}
-
 .order__inner {
     display: flex;
 }
 
 .info__block {
     display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background: rgb(243, 242, 242);
+    min-width: 640px;
 }
 
-.info__title {}
+.info__title {
+    margin-bottom: 15px;
+}
 
 .info__block-top {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin: 40px 40px 20px 40px;
 }
-
-.info__locate {}
-
-.locate-img {
-    text-align: top;
-}
-
-.locate {
-}
-
-.address {}
 
 .text {
     margin-left: 27px;
 }
 
-.info__block-bottom {}
+.info__block-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 16px;
+}
+
+.cep {
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 4px;
+    background: rgb(238, 237, 237);
+    max-width: 200px;
+}
+
+.cep p {
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 12px;
+}
+
+.rua {
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 4px;
+    background: rgb(238, 237, 237);
+    max-width: 560px;
+}
+
+.rua p {
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 12px;
+}
+
+.list {
+    display: flex;
+    gap: 16px;
+}
+
+.number {
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 4px;
+    background: rgb(238, 237, 237);
+    min-width: 200px;
+}
+
+.number p {
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 12px;
+}
+
+.complimento {
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 4px;
+    background: rgb(238, 237, 237);
+    min-width: 345px;
+}
+
+.complimento p {
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 12px;
+}
+
+.list-2 {
+    display: flex;
+    gap: 16px;
+}
+
+.bairro {
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 4px;
+    background: rgb(238, 237, 237);
+    min-width: 200px;
+}
+
+.bairro p {
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 12px;
+}
+
+.cicade {
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 4px;
+    background: rgb(238, 237, 237);
+    min-width: 270px;
+}
+
+.cicade p {
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 12px;
+}
+
+.UF {
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 4px;
+    background: rgb(238, 237, 237);
+    min-width: 60px;
+}
+
+.UF p {
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 12px 12px;
+}
+
+.info__reviews {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.address {
+    color: rgb(64, 57, 55);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.text {
+    margin-bottom: 30px;
+    color: rgb(87, 79, 77);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.pay__variants {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.pay__card {
+    min-width: 164px;
+    border-radius: 6px;
+    background: rgb(230, 229, 229);
+    padding: 16px 20px;
+}
+
+.desc-pay {
+    padding-left: 8px;
+    color: rgb(87, 79, 77);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+}

@@ -30,6 +30,12 @@
     margin-top: 60px;
 }
 
+.cart img:hover {
+    transition: all .4s ease;
+    opacity: .5;
+    border-radius: 10px;
+}
+
 .desc__wrapper {
     display: flex;
     gap: 237px;
@@ -116,6 +122,11 @@
     transform: translateY(-25px);
 }
 
+.kinds__image img:hover {
+    transform: translateY(-12px);
+    transition: all .7s ease;
+}
+
 .kinds__subtitle {
     text-align: center;
     border-radius: 100px;
@@ -193,5 +204,8 @@
     font-size: 18px;
 }
 
-.kinds__btn {
+.kinds__btn img:hover {
+    transform: scale(1.15);
+    border-radius: 8px;
+    transition: all .3s ease-in;
 }
