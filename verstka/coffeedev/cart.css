@@ -51,6 +51,7 @@
 
 .order__inner {
     display: flex;
+    gap: 40px;
 }
 
 .info__block {
@@ -240,3 +241,108 @@
     line-height: 160%;
     text-transform: uppercase;
 }
+
+
+.titles {
+    display: flex;
+    gap: 387px;
+}
+
+.pay__block {
+    display: flex;
+    border-radius: 6px 44px 6px 44px;
+    background: rgb(243, 242, 242);
+}
+
+.info__title {}
+
+.pay__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp__block {
+    display: flex;
+    margin: 45px 45px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 448px;
+}
+
+.exp__img {}
+
+.exp__btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.exp__subtitle {}
+
+.buttons {
+    display: flex;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    background: rgb(230, 229, 229);
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+.plus-btn {
+    color: rgb(75, 41, 149);
+    font-size: 18px;
+}
+
+.current-count {}
+
+.minus-btn {
+    color: rgb(75, 41, 149);
+    font-size: 18px;
+}
+
+.exp__remove {
+    border-radius: 6px;
+    background: rgb(230, 229, 229);
+    padding: 12px 16px;
+}
+
+.remove__btn {}
+
+.price {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: rgb(87, 79, 77);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.valute {}
+
+.line {
+    border: 1px solid rgb(230, 229, 229);
+    text-align: center;
+}
+
+.latte__block {
+    display: flex;
+    margin: 45px 45px;
+}
+
+.latte__img {}
+
+.latte__btn {}
+
+.latte__subtitle {}
+
+.latte__remove {}
