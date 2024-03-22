@@ -231,6 +231,7 @@
     border-radius: 6px;
     background: rgb(230, 229, 229);
     padding: 16px 20px;
+    cursor: pointer;
 }
 
 .desc-pay {
@@ -327,7 +328,11 @@
     line-height: 130%;
 }
 
-.valute {}
+.pay__card.active {
+    border: 1px solid rgb(128, 71, 248);
+    border-radius: 6px;
+    background: rgb(235, 229, 249);
+}
 
 .line {
     border: 1px solid rgb(230, 229, 229);
