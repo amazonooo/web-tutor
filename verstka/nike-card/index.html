@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/verstka/nike-card/main.css">
+</head>
+<body>
+    
+    <div class="card blue" data-tilt>
+        <div class="product">
+            <span class="number">01</span>
+            <span class="sneakers">Sneakers</span>
+            <span class="price">$39.9</span>
+            <img src="/verstka/nike-card/images/nike-blue.png" alt="">
+        </div>
+        <div class="title">
+            <h2>Nike Blue</h2>
+        </div>
+    </div>
+
+    <div class="card purple" data-tilt>
+        <div class="product">
+            <span class="number">02</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">$49.9</span>
+            <img src="/verstka/nike-card/images/nike-purple.png" alt="">
+        </div>
+        <div class="title">
+            <h2>Nike Purple</h2>
+        </div>
+    </div>
+
+    <script src="/verstka/nike-card/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 50,
+            glare: true,
+            'max-glare': 0.5,
+        });
+    </script>
+</body>
+</html>
