@@ -48,7 +48,7 @@ section::after {
     transform-style: preserve-3d;
 }
 
-.container:hover {
+.card-wrapper:hover {
     transform: rotateY(180deg);
 }
 
