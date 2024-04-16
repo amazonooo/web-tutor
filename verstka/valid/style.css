@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #121321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    perspective: 1000px;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    transform: translate(-180px, -130px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    transform: translate(180px, 130px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+    z-index: 100;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+}
+
+.inputbox i {
+    position: absolute;
+    right: 8px;
+    top: 20px;
+    font-size: 1.2rem;
+}
+
+
+.forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget a {
+    color: #D7B4DF;
+    text-decoration: none;
+}
+
+.forget a:hover {
+    color: #d2bed6;
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #eee;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all .4s ease;
+}
+
+button:hover {
+    border-color: #BB71C9;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.register {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #D7B4DF;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
