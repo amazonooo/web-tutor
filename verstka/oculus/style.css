@@ -49,7 +49,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #000;
+    background-color: #9D10E2;
     transition: .4s ease-in-out;
 }
 
@@ -64,22 +64,345 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 900px;
 }
 
-.present__inner {}
+.present__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 230px;
+    padding-bottom: 454px;
+}
 
 .present__title {
+    color: rgb(92, 92, 94);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 110px;
+    margin-bottom: 10px;
 }
 
-.present__desc {}
+.present__desc {
+    color: rgb(92, 92, 94);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-bottom: 5px;
+}
 
-.present__text {}
+.present__text {
+    color: rgb(92, 92, 94);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
 
-.buy {}
+.buy {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
 
-.present__btn {}
+.present__btn {
+    border-radius: 7px;
+    padding: 20px 110px;
+    background: linear-gradient(180.00deg, rgb(188, 16, 216), rgba(80, 0, 250, 0.93) 100%);
+    color: rgb(246, 244, 245);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
 
-.present__price {}
+.present__price {
+    border-radius: 7px;
+    padding: 20px 110px;
+    background: rgba(217, 217, 217, 0);
+    color: rgb(92, 92, 94);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    border: 1px solid #9D10E2;
+}
 
-.present__sub {}
+.present__sub {
+    color: rgb(92, 92, 94);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+
+.products {
+    position: relative;
+    margin-top: 100px;
+}
+
+.products__inner {
+    display: flex;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    min-width: 208px;
+    margin-right: 100px;
+}
+
+.features__title {
+    color: rgb(92, 92, 94);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 85px;
+}
+
+.feutures__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feutures__item {
+    color: rgb(92, 92, 94);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.feutures__link {
+    position: relative;
+}
+
+.features__link:hover::before {
+    width: 100%;
+}
+
+.features__link::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9D10E2;
+    transition: .4s ease-in-out;
+}
+
+.feutures__link.active {
+    color: rgb(7, 7, 7);
+}
+
+
+.setup {
+    display: flex;
+    margin-right: 40px;
+    flex-direction: column;
+}
+
+.setup__title {
+    max-width: 340px;
+    margin-bottom: 20px;
+}
+
+.title {
+    background: linear-gradient(180.00deg, rgb(188, 16, 216), rgba(80, 0, 250, 0.93));
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color:
+        transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+
+.graphics {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.graphics__title {
+    color: rgb(92, 92, 94);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.graphics__text {
+    margin-bottom: 30px;
+    color: rgb(92, 92, 94);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.rectangle {
+    position: absolute;
+    height: 1px;
+    width: 300px;
+    background: rgb(202, 202, 214);
+    transform: rotate(90deg);
+    right: 492px;
+    bottom: 149px;
+}
+
+
+
+.games {
+    margin-top: 100px;
+}
+
+.games__title {
+    color: rgb(92, 92, 94);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 50px;
+}
+
+.games__inner {
+    display: flex;
+    gap: 10px;
+}
+
+.desc__title {
+    margin-bottom: 10px;
+    max-width: 299px;
+}
+
+.desc__text {
+    color: rgb(92, 92, 94);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.desc__btn {
+    padding: 16px 48px;
+    background: transparent;
+    background: linear-gradient(180.00deg, rgb(188, 16, 216), rgba(80, 0, 250, 0.93));
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color:
+        transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    border: 1px solid rgb(188, 16, 216)
+}
+
+
+.games__block {
+    display: flex;
+    margin-left: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(188, 16, 216);
+    border-radius: 8px;
+    position: relative;
+    min-height: 500px;
+}
+
+.card__img img {
+    max-width: 260px;
+    min-height: 280px;
+    border-radius: 8px;
+}
+
+.card__img {
+    margin-bottom: 10px;
+}
+
+.card__name {
+    color: rgb(7, 7, 7);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.card__desc {
+    color: rgb(92, 92, 94);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.card__link {
+    position: absolute;
+    bottom: 20px;
+    background: linear-gradient(180.00deg, rgb(188, 16, 216), rgba(80, 0, 250, 0.93));
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color:
+        transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+
+.oculus {
+    position: relative;
+    margin-top: 100px;
+}
+
+.main__p {
+    /* H00 */
+    background: linear-gradient(180.00deg, rgb(188, 16, 216), rgba(80, 0, 250, 0.93));
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color:
+        transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 400px;
+    font-weight: 700;
+    line-height: 484px;
+    opacity: 0.1;
+    text-align: center;
+}
+
+.oculus__inner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65px
+}
+
+.oculus__img {
+    margin-bottom: 30px;
+    pointer-events: none;
+}
+
+.buy {
+    margin-bottom: 10px;
+}
+
+.oculus__text {
+    color: rgb(92, 92, 94);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+}
