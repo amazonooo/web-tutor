@@ -319,6 +319,7 @@
     max-width: 260px;
     min-height: 280px;
     border-radius: 8px;
+    pointer-events: none;
 }
 
 .card__img {
