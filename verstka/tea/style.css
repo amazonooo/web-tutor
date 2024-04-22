@@ -14,10 +14,6 @@ button {
 
 /* -----------HEADER----------- */
 
-.header {
-    
-}
-
 .container {
     margin: 0 auto;
     max-width: 1240px;
@@ -125,12 +121,10 @@ button {
     margin-left: 80px;
 }
 
-.user-actions__item {
-
-}
-
-.user-actions__link {
-
+.menu__link.active {
+    font-weight: 700;
+    transform: translateY(-10px);
+    transition: font-weight transform .3s ease-in-out;
 }
 
 
@@ -230,8 +224,8 @@ button {
 }
 
 .animation {
-    animation: scaleObj 1s;
-    animation-delay: .7s;
+    animation: scaleObj .9s;
+    animation-delay: .6s;
 }
 
 @keyframes scaleObj {

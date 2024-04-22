@@ -2,6 +2,7 @@ const menuBtn = document.querySelector('.menu__btn');
 const menuClose = document.querySelector('.menu__close'); 
 const menuList = document.querySelector('.menu__list');
 const menuShadow = document.querySelector('.menu--close');
+const menuLinks = document.querySelectorAll('.menu__link');
 
 menuBtn.addEventListener('click', ()=> {
     menuList.classList.toggle('menu__list--open');
@@ -58,5 +59,17 @@ puBtn.addEventListener('click', () => {
     puImg.classList.add('animation');
 })
 
+console.log(menuLinks)
 
 
+menuLinks.forEach(function(menuLink) {
+    menuLink.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        menuLinks.forEach(function(item) {
+            item.classList.remove('active')
+        })
+
+        this.classList.add('active')
+    })
+})

@@ -1,6 +1,7 @@
 const featuresLinks = document.querySelectorAll('.feutures__link')
 const menuLinks = document.querySelectorAll('.menu__link')
-const footerLinks = document.querySelectorAll('.footer__link');
+const footerLinks = document.querySelectorAll('.footer__link')
+const socialLinks = document.querySelectorAll('.social__link');
 
 const shopBtn = document.querySelector('.shop')
 const shopSection = document.querySelector('.accessries')
@@ -16,6 +17,12 @@ function scrollTo(elem) {
 
 shopBtn.addEventListener('click', () => {
 	scrollTo(shopSection)
+})
+
+socialLinks.forEach(function(socialink) {
+	socialink.addEventListener('click', function(event) {
+		event.preventDefault()
+	})
 })
 
 featuresLinks.forEach(function(featuresLink) {
