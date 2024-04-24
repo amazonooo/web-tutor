@@ -8,36 +8,73 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="header">
+        <div class="logo"><a href="#">LOGO</a></div>
+        <div class="menu-burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="#" class="header-link">Home</a>
+                </li>
+                <li class="header-item">
+                    <a href="#" class="header-link">About</a>
+                </li>
+                <li class="header-item">
+                    <a href="#" class="header-link">Services</a>
+                </li>
+                <li class="header-item">
+                    <a href="#" class="header-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     
-    <form action="#" class="login-form">
-        <h1 class="login-title">Login</h1>
+    <div class="form-inner">
+        <form action="#" class="login-form">
+            <h1 class="login-title">Login</h1>
 
-        <div class="input-box">
-            <i class='bx bxs-user'></i>
-            <input type="text" placeholder="Username">
-        </div>
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <input type="text" placeholder="Username">
+            </div>
 
-        <div class="input-box">
-            <i class='bx bxs-lock-alt' ></i>
-            <input type="password" placeholder="Password">
-        </div>
+            <div class="input-box">
+                <i class='bx bxs-lock-alt' ></i>
+                <input type="password" placeholder="Password">
+            </div>
 
-        <div class="remember-forgot-box">
-            <label for="remember">
-                <input type="checkbox" id="remember">
-                Remember me
-            </label>
-            <a href="!#">Forgot password?</a>
-        </div>
+            <div class="remember-forgot-box">
+                <label for="remember">
+                    <input type="checkbox" id="remember">
+                    Remember me
+                </label>
+                <a href="!#">Forgot password?</a>
+            </div>
 
-        <button class="login-btn">Login</button>
+            <button class="login-btn">Login</button>
 
-        <p class="register">
-            Don't have an account?
-            <a href="!#">Register</a>
-        </p>
+            <p class="register">
+                Don't have an account?
+                <a href="!#">Register</a>
+            </p>
 
-    </form>
-
+        </form>
+    </div>    
 </body>
+
+<script>
+
+    const header = document.querySelector('.header')
+    const menuBtn = document.querySelector('.menu-burger-btn')
+
+    menuBtn.addEventListener('click', () => {
+        header.classList.toggle('open')
+    })
+
+</script>
 </html>
