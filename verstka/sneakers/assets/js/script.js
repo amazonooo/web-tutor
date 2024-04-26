@@ -14,7 +14,6 @@ if (navClose) {
     })
 }
 
-
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () => {
@@ -23,3 +22,31 @@ const linkAction = () => {
 	navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+let swiperImages = new Swiper('.home__swiper', {
+	loop: true,
+    spaceBetween: 64,
+    grabCursor: true,
+    centeredSlides: true,
+
+	pagination: {
+		el: '.swiper-pagination',
+        type: 'fraction',
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+})
+
+let swiperTitles = new Swiper('.home__titles', {
+	loop: true,
+	spaceBetween: 64,
+	grabCursor: true,
+	centeredSlides: true,
+})
+
+swiperImages.controller.control = swiperTitles
+swiperTitles.controller.control = swiperImages
