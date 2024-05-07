@@ -59,7 +59,6 @@ puBtn.addEventListener('click', () => {
     puImg.classList.add('animation');
 })
 
-console.log(menuLinks)
 
 
 menuLinks.forEach(function(menuLink) {
