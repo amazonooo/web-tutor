@@ -1,0 +1,19 @@
+.photo-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    /* Укажите нужную высоту */
+}
+
+.photo {
+    width: 100px;
+    /* Укажите начальный размер */
+    transition: all 0.5s ease;
+    /* Плавное изменение размера */
+}
+
+.photo.active {
+    width: 200px;
+    /* Укажите увеличенный размер */
+}
